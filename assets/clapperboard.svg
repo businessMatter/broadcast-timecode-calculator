@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 240" role="img" aria-labelledby="title desc">
+  <title id="title">Clapperboard</title>
+  <desc id="desc">A tilted hand-drawn film clapperboard with three short accent lines.</desc>
+  <defs>
+    <clipPath id="top-clip"><path d="M31 63 157 16l14 38L45 101Z"/></clipPath>
+    <clipPath id="body-strip-clip"><path d="M50 107 177 68l12 39-127 39Z"/></clipPath>
+  </defs>
+  <g stroke="#101c24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 63 157 16l14 38L45 101Z" fill="#101c24"/>
+    <g clip-path="url(#top-clip)" fill="#d8efff" stroke="none">
+      <path d="m43 56 19-7-4 35-20 7Z"/>
+      <path d="m80 42 20-7-5 35-20 7Z"/>
+      <path d="m119 28 20-8-5 36-20 7Z"/>
+      <path d="m153 15 13-5-4 34-13 5Z"/>
+    </g>
+    <path d="M31 63 157 16l14 38L45 101Z" fill="none"/>
+
+    <path d="M50 107 177 68l12 39-127 39Z" fill="#101c24"/>
+    <g clip-path="url(#body-strip-clip)" fill="#d8efff" stroke="none">
+      <path d="m61 99 22-7-5 38-21 6Z"/>
+      <path d="m102 86 22-7-6 38-21 7Z"/>
+      <path d="m143 74 22-7-6 37-21 7Z"/>
+      <path d="m179 63 16-5-6 37-16 5Z"/>
+    </g>
+    <path d="M50 107 177 68l12 39-127 39Z" fill="none"/>
+    <path d="m62 146 127-39 21 85-127 39Z" fill="none"/>
+
+    <path d="m202 47 14-25" fill="none"/>
+    <path d="m211 75 25-11" fill="none"/>
+    <path d="m214 106 27 5" fill="none"/>
+  </g>
+</svg>

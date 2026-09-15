@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A precise browser-based broadcast timecode calculator.">
+    <title>Broadcast Timecode Calculator — What is 24+1?</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <header class="brand-bar">
+      <div class="brand">What is 24+1?</div>
+      <div class="brand-marks" aria-hidden="true"><span></span><span></span></div>
+    </header>
+
+    <main class="page-shell">
+      <div class="title-lockup">
+        <span class="clapperboard-art" aria-hidden="true"></span>
+        <h1>Broadcast Timecode Calculator</h1>
+      </div>
+
+      <div class="calculator-wrap">
+        <span class="cloud-art" aria-hidden="true"></span>
+        <section class="calculator-card" aria-label="Timecode calculator">
+          <div class="tabs" role="tablist" aria-label="Calculator function">
+            <button id="tab-round" class="tab" type="button" role="tab" aria-selected="true" aria-controls="panel-round" tabindex="0">Round</button>
+            <button id="tab-duration" class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-duration" tabindex="-1">Duration</button>
+            <button id="tab-format" class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-format" tabindex="-1">Format</button>
+          </div>
+
+          <form id="panel-round" class="panel" role="tabpanel" aria-labelledby="tab-round" novalidate>
+            <div class="field-grid round-grid">
+              <div class="field timecode-field">
+                <label for="round-timecode">Timecode</label>
+                <input id="round-timecode" name="timecode" class="timecode-input" type="text" inputmode="text" autocomplete="off" placeholder="00:00:44:00" aria-describedby="round-timecode-help round-timecode-error">
+                <p id="round-timecode-help" class="input-help">Seconds · mm:ss · hh:mm:ss · hh:mm:ss:ff</p>
+                <p id="round-timecode-error" class="error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="round-offset">Offset (seconds)</label>
+                <input id="round-offset" name="offset" class="number-input" type="text" inputmode="numeric" value="+10" aria-describedby="round-offset-error">
+                <p id="round-offset-error" class="error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="round-interval">Interval (seconds)</label>
+                <input id="round-interval" name="interval" class="number-input" type="text" inputmode="numeric" value="5" aria-describedby="round-interval-error">
+                <p id="round-interval-error" class="error" aria-live="polite"></p>
+              </div>
+              <div class="field frame-rate-field"></div>
+            </div>
+            <fieldset class="direction-fieldset">
+              <legend>Direction</legend>
+              <div class="radio-grid">
+                <label><input type="radio" name="direction" value="up" checked> Up</label>
+                <label><input type="radio" name="direction" value="down"> Down</label>
+                <label><input type="radio" name="direction" value="nearest"> Nearest</label>
+                <label><input type="radio" name="direction" value="none"> None</label>
+              </div>
+            </fieldset>
+            <div class="submit-row"></div>
+          </form>
+
+          <form id="panel-duration" class="panel" role="tabpanel" aria-labelledby="tab-duration" hidden novalidate>
+            <div class="field-grid duration-grid">
+              <div class="field timecode-field">
+                <label for="duration-start">Start</label>
+                <input id="duration-start" name="start" class="timecode-input" type="text" inputmode="text" autocomplete="off" placeholder="00:00:00:00" aria-describedby="duration-start-help duration-start-error">
+                <p id="duration-start-help" class="input-help">Seconds · mm:ss · hh:mm:ss · hh:mm:ss:ff</p>
+                <p id="duration-start-error" class="error" aria-live="polite"></p>
+              </div>
+              <div class="field timecode-field">
+                <label for="duration-end">End</label>
+                <input id="duration-end" name="end" class="timecode-input" type="text" inputmode="text" autocomplete="off" placeholder="00:01:00:00" aria-describedby="duration-end-help duration-end-error">
+                <p id="duration-end-help" class="input-help">Seconds · mm:ss · hh:mm:ss · hh:mm:ss:ff</p>
+                <p id="duration-end-error" class="error" aria-live="polite"></p>
+              </div>
+              <div class="field frame-rate-field"></div>
+            </div>
+            <div class="option-row">
+              <label class="check-label"><input id="include-end" type="checkbox"> Include end frame</label>
+              <button class="help-button" type="button" aria-expanded="false" aria-controls="include-help" aria-label="About Include end frame">?</button>
+              <span id="include-help" class="help-popover" hidden>Count the end frame as part of the duration.</span>
+              <label class="check-label"><input id="cross-midnight" type="checkbox"> Cross midnight</label>
+              <button class="help-button" type="button" aria-expanded="false" aria-controls="midnight-help" aria-label="About Cross midnight">?</button>
+              <span id="midnight-help" class="help-popover" hidden>Treat an earlier end time as the following day.</span>
+            </div>
+            <div class="submit-row"></div>
+          </form>
+
+          <form id="panel-format" class="panel" role="tabpanel" aria-labelledby="tab-format" hidden novalidate>
+            <div class="field-grid format-grid">
+              <div class="field timecode-field">
+                <label for="format-timecode">Timecode</label>
+                <input id="format-timecode" name="timecode" class="timecode-input" type="text" inputmode="text" autocomplete="off" placeholder="1:20" aria-describedby="format-timecode-help format-timecode-error">
+                <p id="format-timecode-help" class="input-help">e.g. 0:44 → 00:00:44:00</p>
+                <p id="format-timecode-error" class="error" aria-live="polite"></p>
+              </div>
+              <div class="field frame-rate-field"></div>
+            </div>
+            <div class="submit-row"></div>
+          </form>
+
+          <section class="result-panel" aria-label="Result">
+            <div class="result-value-wrap">
+              <div class="result-label">Result</div>
+              <output id="result-value" class="result-value" aria-live="off">—</output>
+              <div id="result-feedback" class="result-feedback" aria-live="polite"></div>
+            </div>
+            <button id="copy-button" class="secondary-button" type="button" disabled>Copy</button>
+            <div class="field output-field">
+              <label for="output-format">Output format</label>
+              <select id="output-format">
+                <option value="hh:mm:ss:ff">hh:mm:ss:ff</option>
+                <option value="hh:mm:ss">hh:mm:ss</option>
+                <option value="mm:ss">mm:ss</option>
+              </select>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <template id="frame-rate-template">
+      <div class="label-with-help">
+        <label>Frame rate</label>
+        <button class="help-button" type="button" aria-expanded="false" aria-label="About frame rate">?</button>
+      </div>
+      <select class="frame-rate-select">
+        <option value="24">24 fps</option>
+        <option value="25" selected>25 fps</option>
+        <option value="30">30 fps</option>
+        <option value="50">50 fps</option>
+        <option value="60">60 fps</option>
+      </select>
+      <span class="help-popover frame-rate-help" hidden>Applies to all tabs. Inputs are interpreted at this frame rate; no frame-rate conversion. Integer frame rates, non-drop-frame only.</span>
+    </template>
+
+    <template id="submit-template">
+      <button class="primary-button" type="submit">Calculate</button>
+      <label class="check-label auto-copy-label"><input class="auto-copy" type="checkbox"> Auto-copy on calculate</label>
+    </template>
+  </body>
+</html>
