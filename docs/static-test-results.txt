@@ -1,0 +1,8 @@
+PASS contrast text / white: 11.91:1
+PASS contrast muted / white: 5.84:1
+PASS contrast muted / result: 5.09:1
+PASS contrast white / blue: 4.97:1
+PASS contrast field border / white: 3.15:1
+PASS contrast error / white: 6.57:1
+PASS HTML labels, references, tabs, decorative images, local resources, static safety, breakpoints
+PASS HTTP project subpath: index + all linked resources return 200

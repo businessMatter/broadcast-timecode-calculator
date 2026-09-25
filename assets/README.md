@@ -1,10 +1,8 @@
-# Illustration assets
+# 素材来源
 
-The two source screenshots were redrawn as lightweight, transparent SVG assets:
+- `clapperboard.png`、`cloud.png`：直接从本次用户上传的 `ChatGPT Image Sep 15, 2026, 05_07_37 PM(1).png` 裁切提取，移除外围浅蓝底，保留原图的黑色线条、倾角、条纹、表情及放射短线。没有生成替代插画、没有使用 emoji。
+- 场记板中保留原始内部浅蓝/白色像素。云朵底部按原图层次被白色工作卡片覆盖，面部露出。
+- 品牌两道蓝色短线由 CSS 绘制。`favicon.svg` 是文字图标。
+- 字体使用系统字体，不包含需分发许可的第三方字体。
 
-- `clapperboard.svg`
-- `cloud.svg`
-
-They preserve the approved hand-drawn character: rounded black strokes, the clapperboard's separated striped top, the cloud's face, and the three accent lines. The page supplies responsive dimensions; the files can be edited independently without changing the calculator logic.
-
-The pale-blue areas inside the clapperboard stripes intentionally match the page background (`#D8EFFF`). All other areas are transparent.
+参考图由用户提供；本交付不另行主张该图的版权，也不附加第三方素材许可。
