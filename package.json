@@ -1,10 +1,9 @@
 {
   "name": "broadcast-timecode-calculator",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test tests/timecode.test.js"
   },
   "engines": {
     "node": ">=20"

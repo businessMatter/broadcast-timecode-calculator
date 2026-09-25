@@ -1,0 +1,676 @@
+TAP version 13
+# Subtest: F01
+ok 1 - F01
+  ---
+  duration_ms: 2.25491
+  type: 'test'
+  ...
+# Subtest: F02
+ok 2 - F02
+  ---
+  duration_ms: 0.142065
+  type: 'test'
+  ...
+# Subtest: F03
+ok 3 - F03
+  ---
+  duration_ms: 0.092681
+  type: 'test'
+  ...
+# Subtest: F04
+ok 4 - F04
+  ---
+  duration_ms: 0.074122
+  type: 'test'
+  ...
+# Subtest: F05
+ok 5 - F05
+  ---
+  duration_ms: 0.103476
+  type: 'test'
+  ...
+# Subtest: F11
+ok 6 - F11
+  ---
+  duration_ms: 0.07256
+  type: 'test'
+  ...
+# Subtest: F12a
+ok 7 - F12a
+  ---
+  duration_ms: 0.150878
+  type: 'test'
+  ...
+# Subtest: F12b
+ok 8 - F12b
+  ---
+  duration_ms: 0.104088
+  type: 'test'
+  ...
+# Subtest: F13a
+ok 9 - F13a
+  ---
+  duration_ms: 0.109075
+  type: 'test'
+  ...
+# Subtest: F13b
+ok 10 - F13b
+  ---
+  duration_ms: 0.139651
+  type: 'test'
+  ...
+# Subtest: F14a
+ok 11 - F14a
+  ---
+  duration_ms: 0.075304
+  type: 'test'
+  ...
+# Subtest: F14b
+ok 12 - F14b
+  ---
+  duration_ms: 0.070297
+  type: 'test'
+  ...
+# Subtest: F15a
+ok 13 - F15a
+  ---
+  duration_ms: 0.052199
+  type: 'test'
+  ...
+# Subtest: F15b
+ok 14 - F15b
+  ---
+  duration_ms: 0.043737
+  type: 'test'
+  ...
+# Subtest: F16
+ok 15 - F16
+  ---
+  duration_ms: 0.071658
+  type: 'test'
+  ...
+# Subtest: digits
+ok 16 - digits
+  ---
+  duration_ms: 0.056886
+  type: 'test'
+  ...
+# Subtest: F06: formats preserve frames and accumulate minutes
+ok 17 - F06: formats preserve frames and accumulate minutes
+  ---
+  duration_ms: 0.110998
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "1:60"
+ok 18 - F07/F08/F10/F17 invalid "1:60"
+  ---
+  duration_ms: 0.209367
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "00:60:00"
+ok 19 - F07/F08/F10/F17 invalid "00:60:00"
+  ---
+  duration_ms: 0.063156
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "00:00:00:25"
+ok 20 - F07/F08/F10/F17 invalid "00:00:00:25"
+  ---
+  duration_ms: 0.047301
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid ""
+ok 21 - F07/F08/F10/F17 invalid ""
+  ---
+  duration_ms: 0.070767
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "1::20"
+ok 22 - F07/F08/F10/F17 invalid "1::20"
+  ---
+  duration_ms: 0.089876
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "-1"
+ok 23 - F07/F08/F10/F17 invalid "-1"
+  ---
+  duration_ms: 0.065669
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "+1"
+ok 24 - F07/F08/F10/F17 invalid "+1"
+  ---
+  duration_ms: 0.078138
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "1;20"
+ok 25 - F07/F08/F10/F17 invalid "1;20"
+  ---
+  duration_ms: 0.042384
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "1.5"
+ok 26 - F07/F08/F10/F17 invalid "1.5"
+  ---
+  duration_ms: 0.091858
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "04.31"
+ok 27 - F07/F08/F10/F17 invalid "04.31"
+  ---
+  duration_ms: 0.041252
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "00.04.31.00"
+ok 28 - F07/F08/F10/F17 invalid "00.04.31.00"
+  ---
+  duration_ms: 0.033941
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "04:31.00"
+ok 29 - F07/F08/F10/F17 invalid "04:31.00"
+  ---
+  duration_ms: 0.033411
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "04.60.00"
+ok 30 - F07/F08/F10/F17 invalid "04.60.00"
+  ---
+  duration_ms: 0.041292
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "00.39.25"
+ok 31 - F07/F08/F10/F17 invalid "00.39.25"
+  ---
+  duration_ms: 0.040772
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "1 2"
+ok 32 - F07/F08/F10/F17 invalid "1 2"
+  ---
+  duration_ms: 0.089195
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "1:2:3:4:5"
+ok 33 - F07/F08/F10/F17 invalid "1:2:3:4:5"
+  ---
+  duration_ms: 0.039069
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "１"
+ok 34 - F07/F08/F10/F17 invalid "１"
+  ---
+  duration_ms: 0.119611
+  type: 'test'
+  ...
+# Subtest: F07/F08/F10/F17 invalid "1e2"
+ok 35 - F07/F08/F10/F17 invalid "1e2"
+  ---
+  duration_ms: 0.055093
+  type: 'test'
+  ...
+# Subtest: F09/F18: reinterpreted frame range
+ok 36 - F09/F18: reinterpreted frame range
+  ---
+  duration_ms: 0.210949
+  type: 'test'
+  ...
+# Subtest: F19 shared dot parser
+ok 37 - F19 shared dot parser
+  ---
+  duration_ms: 0.219011
+  type: 'test'
+  ...
+# Subtest: R01
+ok 38 - R01
+  ---
+  duration_ms: 0.142165
+  type: 'test'
+  ...
+# Subtest: R02
+ok 39 - R02
+  ---
+  duration_ms: 0.080031
+  type: 'test'
+  ...
+# Subtest: R03
+ok 40 - R03
+  ---
+  duration_ms: 0.13857
+  type: 'test'
+  ...
+# Subtest: R04
+ok 41 - R04
+  ---
+  duration_ms: 0.093111
+  type: 'test'
+  ...
+# Subtest: R05a
+ok 42 - R05a
+  ---
+  duration_ms: 0.096145
+  type: 'test'
+  ...
+# Subtest: R05b
+ok 43 - R05b
+  ---
+  duration_ms: 1.233776
+  type: 'test'
+  ...
+# Subtest: R06
+ok 44 - R06
+  ---
+  duration_ms: 0.05934
+  type: 'test'
+  ...
+# Subtest: R07
+ok 45 - R07
+  ---
+  duration_ms: 0.038137
+  type: 'test'
+  ...
+# Subtest: R09
+ok 46 - R09
+  ---
+  duration_ms: 0.034692
+  type: 'test'
+  ...
+# Subtest: R10
+ok 47 - R10
+  ---
+  duration_ms: 0.034382
+  type: 'test'
+  ...
+# Subtest: Round actual delta includes frames
+ok 48 - Round actual delta includes frames
+  ---
+  duration_ms: 0.069896
+  type: 'test'
+  ...
+# Subtest: R08: negative before rounding is rejected
+ok 49 - R08: negative before rounding is rejected
+  ---
+  duration_ms: 0.220754
+  type: 'test'
+  ...
+# Subtest: R11 interval 0
+ok 50 - R11 interval 0
+  ---
+  duration_ms: 0.077698
+  type: 'test'
+  ...
+# Subtest: R11 interval -1
+ok 51 - R11 interval -1
+  ---
+  duration_ms: 0.03936
+  type: 'test'
+  ...
+# Subtest: R11 interval 1.5
+ok 52 - R11 interval 1.5
+  ---
+  duration_ms: 0.062986
+  type: 'test'
+  ...
+# Subtest: R11 interval bad
+ok 53 - R11 interval bad
+  ---
+  duration_ms: 0.032839
+  type: 'test'
+  ...
+# Subtest: R11 interval 
+ok 54 - R11 interval 
+  ---
+  duration_ms: 0.029174
+  type: 'test'
+  ...
+# Subtest: Offset rejects fractional and unsafe values
+ok 55 - Offset rejects fractional and unsafe values
+  ---
+  duration_ms: 0.097648
+  type: 'test'
+  ...
+# Subtest: D01
+ok 56 - D01
+  ---
+  duration_ms: 0.07306
+  type: 'test'
+  ...
+# Subtest: D02
+ok 57 - D02
+  ---
+  duration_ms: 0.035093
+  type: 'test'
+  ...
+# Subtest: D03a
+ok 58 - D03a
+  ---
+  duration_ms: 0.02641
+  type: 'test'
+  ...
+# Subtest: D03b
+ok 59 - D03b
+  ---
+  duration_ms: 0.024607
+  type: 'test'
+  ...
+# Subtest: D04
+ok 60 - D04
+  ---
+  duration_ms: 0.02671
+  type: 'test'
+  ...
+# Subtest: D05
+ok 61 - D05
+  ---
+  duration_ms: 0.025619
+  type: 'test'
+  ...
+# Subtest: D07
+ok 62 - D07
+  ---
+  duration_ms: 0.025428
+  type: 'test'
+  ...
+# Subtest: Midnight equal
+ok 63 - Midnight equal
+  ---
+  duration_ms: 0.055103
+  type: 'test'
+  ...
+# Subtest: D04 default rejects earlier end
+ok 64 - D04 default rejects earlier end
+  ---
+  duration_ms: 0.144088
+  type: 'test'
+  ...
+# Subtest: D06 either midnight boundary invalid
+ok 65 - D06 either midnight boundary invalid
+  ---
+  duration_ms: 0.096566
+  type: 'test'
+  ...
+# Subtest: C01
+ok 66 - C01
+  ---
+  duration_ms: 0.385533
+  type: 'test'
+  ...
+# Subtest: C02
+ok 67 - C02
+  ---
+  duration_ms: 0.107162
+  type: 'test'
+  ...
+# Subtest: C03
+ok 68 - C03
+  ---
+  duration_ms: 0.110287
+  type: 'test'
+  ...
+# Subtest: C04
+ok 69 - C04
+  ---
+  duration_ms: 0.104969
+  type: 'test'
+  ...
+# Subtest: C05
+ok 70 - C05
+  ---
+  duration_ms: 0.077277
+  type: 'test'
+  ...
+# Subtest: C06
+ok 71 - C06
+  ---
+  duration_ms: 0.044398
+  type: 'test'
+  ...
+# Subtest: C07
+ok 72 - C07
+  ---
+  duration_ms: 0.057617
+  type: 'test'
+  ...
+# Subtest: C10zero
+ok 73 - C10zero
+  ---
+  duration_ms: 0.067812
+  type: 'test'
+  ...
+# Subtest: C10hours
+ok 74 - C10hours
+  ---
+  duration_ms: 0.037126
+  type: 'test'
+  ...
+# Subtest: leading plus
+ok 75 - leading plus
+  ---
+  duration_ms: 0.035253
+  type: 'test'
+  ...
+# Subtest: C08/C09 signed truncation preserves exact value
+ok 76 - C08/C09 signed truncation preserves exact value
+  ---
+  duration_ms: 0.08622
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "00:10+"
+ok 77 - C11 expression rejects "00:10+"
+  ---
+  duration_ms: 0.099871
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "00:10+-00:05"
+ok 78 - C11 expression rejects "00:10+-00:05"
+  ---
+  duration_ms: 0.052099
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "00:10--00:05"
+ok 79 - C11 expression rejects "00:10--00:05"
+  ---
+  duration_ms: 0.039159
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "(00:10)"
+ok 80 - C11 expression rejects "(00:10)"
+  ---
+  duration_ms: 0.034943
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "00:10*2"
+ok 81 - C11 expression rejects "00:10*2"
+  ---
+  duration_ms: 0.031367
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "1/2"
+ok 82 - C11 expression rejects "1/2"
+  ---
+  duration_ms: 0.030476
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "1=2"
+ok 83 - C11 expression rejects "1=2"
+  ---
+  duration_ms: 0.030767
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "1＋2"
+ok 84 - C11 expression rejects "1＋2"
+  ---
+  duration_ms: 0.034743
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "1－2"
+ok 85 - C11 expression rejects "1－2"
+  ---
+  duration_ms: 0.03312
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "1\\n2"
+ok 86 - C11 expression rejects "1\\n2"
+  ---
+  duration_ms: 0.035163
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "1 2"
+ok 87 - C11 expression rejects "1 2"
+  ---
+  duration_ms: 0.035274
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects "--1"
+ok 88 - C11 expression rejects "--1"
+  ---
+  duration_ms: 0.035113
+  type: 'test'
+  ...
+# Subtest: C11 expression rejects ""
+ok 89 - C11 expression rejects ""
+  ---
+  duration_ms: 0.024717
+  type: 'test'
+  ...
+# Subtest: C12/C13 physical lines and line endings
+ok 90 - C12/C13 physical lines and line endings
+  ---
+  duration_ms: 0.328717
+  type: 'test'
+  ...
+# Subtest: C14 physical error line, no partial result
+ok 91 - C14 physical error line, no partial result
+  ---
+  duration_ms: 0.108825
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "Title"
+ok 92 - C15/C16 list rejects "Title"
+  ---
+  duration_ms: 0.088934
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "1\\t2"
+ok 93 - C15/C16 list rejects "1\\t2"
+  ---
+  duration_ms: 0.040251
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "1\\t"
+ok 94 - C15/C16 list rejects "1\\t"
+  ---
+  duration_ms: 0.03301
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "\\t"
+ok 95 - C15/C16 list rejects "\\t"
+  ---
+  duration_ms: 0.029995
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "1,2"
+ok 96 - C15/C16 list rejects "1,2"
+  ---
+  duration_ms: 0.031407
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "1 notes"
+ok 97 - C15/C16 list rejects "1 notes"
+  ---
+  duration_ms: 0.035163
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "-1"
+ok 98 - C15/C16 list rejects "-1"
+  ---
+  duration_ms: 0.030116
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "+1"
+ok 99 - C15/C16 list rejects "+1"
+  ---
+  duration_ms: 0.028343
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "1+2"
+ok 100 - C15/C16 list rejects "1+2"
+  ---
+  duration_ms: 0.028403
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "• 1"
+ok 101 - C15/C16 list rejects "• 1"
+  ---
+  duration_ms: 0.106421
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects "1) 04:12"
+ok 102 - C15/C16 list rejects "1) 04:12"
+  ---
+  duration_ms: 0.041062
+  type: 'test'
+  ...
+# Subtest: C15/C16 list rejects ""
+ok 103 - C15/C16 list rejects ""
+  ---
+  duration_ms: 0.028653
+  type: 'test'
+  ...
+# Subtest: C16 single items valid
+ok 104 - C16 single items valid
+  ---
+  duration_ms: 0.103877
+  type: 'test'
+  ...
+# Subtest: C17 second item frame error
+ok 105 - C17 second item frame error
+  ---
+  duration_ms: 0.103066
+  type: 'test'
+  ...
+# Subtest: C19 every intermediate must be safe
+ok 106 - C19 every intermediate must be safe
+  ---
+  duration_ms: 0.210999
+  type: 'test'
+  ...
+# Subtest: fps 24: boundary and signed/full roundtrips
+ok 107 - fps 24: boundary and signed/full roundtrips
+  ---
+  duration_ms: 0.17205
+  type: 'test'
+  ...
+# Subtest: fps 25: boundary and signed/full roundtrips
+ok 108 - fps 25: boundary and signed/full roundtrips
+  ---
+  duration_ms: 0.163878
+  type: 'test'
+  ...
+# Subtest: fps 30: boundary and signed/full roundtrips
+ok 109 - fps 30: boundary and signed/full roundtrips
+  ---
+  duration_ms: 0.122575
+  type: 'test'
+  ...
+# Subtest: fps 50: boundary and signed/full roundtrips
+ok 110 - fps 50: boundary and signed/full roundtrips
+  ---
+  duration_ms: 0.103406
+  type: 'test'
+  ...
+# Subtest: fps 60: boundary and signed/full roundtrips
+ok 111 - fps 60: boundary and signed/full roundtrips
+  ---
+  duration_ms: 0.078529
+  type: 'test'
+  ...
+1..111
+# tests 111
+# suites 0
+# pass 111
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 106.162948
